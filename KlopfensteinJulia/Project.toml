@@ -1,0 +1,4 @@
+name = "KlopfensteinJulia"
+uuid = "5dc5797b-0626-4d80-85f8-acf103e7484f"
+authors = ["Andrew Burger <andrew.burger04@gmail.com>"]
+version = "0.1.0"
