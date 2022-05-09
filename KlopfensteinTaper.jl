@@ -31,7 +31,7 @@ numSections = ceil(Int,L/(C/fₑ/sqrt(ϵᵣ)/2));
 @printf("L = %g cm\n",L*100)
 @printf("L = %g mils\n",L*1e6/25.4)
 l  = L/numSections;
-x = range(0,L,numSections);
+x = range(0+l/2,L-l/2,numSections);
 function I(y)
     besseli(1,A*sqrt(1-y.^2))./(A*sqrt(1-y.^2));
 end;

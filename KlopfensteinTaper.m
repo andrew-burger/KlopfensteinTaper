@@ -21,7 +21,7 @@ Beta = 2*pi/lambdaeff;
 L = A/Beta; %meter
 numSections = ceil(L/(c/fHighEff/sqrt(er)/2)) %sampling at 2xfHighEff so that taper works until fHigh
 l  = L/numSections;
-z = linspace(0,L,numSections);
+z = linspace(0+l/2,L-l/2,numSections);
 syms y
 phi = NaN(1,length(z));
 for x = 1:length(z)
